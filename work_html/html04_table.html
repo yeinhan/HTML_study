@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <h2>기본 테이블 만들기</h2>
+    <table border="1" style="width:300px;">
+        <tr>
+            <th>컬럼01</th>
+            <th>컬럼02</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>2</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>4</td>
+        </tr>
+        <tr>
+            <td>5</td>
+        </tr>
+    </table>
+    <hr>
+
+    <h2>주요 태그 사용해서 table 생성하기.</h2>
+    <table border="1">
+        <caption>테이블 제목</caption>
+        <colgroup>
+            <col style="width: 100px;"/>
+            <col style="width:200px;"/>
+            <col style="width: 300px;"/>
+        </colgroup>
+        <thead>
+            <tr>
+                <th>컬럼01</th>
+                <th>컬럼02</th>
+                <th>컬럼03</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>2</td>
+                <td>3</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>2</td>
+                <td>3</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>2</td>
+                <td>3</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td>f1</td>
+                <td>f2</td>
+                <td>f3</td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>
