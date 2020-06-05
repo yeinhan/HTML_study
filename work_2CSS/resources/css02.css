@@ -1,0 +1,78 @@
+pre{
+    text-align: center;
+}
+h1{
+    text-align: center;
+    color: blue;
+}
+#sid01{
+    color: green;
+}
+#sid02{
+    color: yellow;
+}
+#sid03{
+    color: brown;
+}
+.scls{
+    color: hotpink;
+}
+#scls01{
+    color: black;
+}
+
+/*전체 선택자*/
+/*
+*{
+    text-align: right;
+    margin: 0;
+padding: 0;
+}*/
+
+#at>p{
+    color:orange;
+}
+
+#at>div>p{
+    color: silver;
+}
+
+h3 +b{
+    background-color: black;
+    color: white;
+}
+
+span + b{
+    background-color: yellow;
+    color: green;
+}
+
+p[title]{
+    color: skyblue;
+}
+p[title =a ]{
+    color: red;
+}
+
+a:link{
+    color: pink;
+    font-size: 20pt;
+}
+a:visited{
+    color: gray;
+    font-size: 50pt;
+}
+a:hover{
+    background-color: purple;
+}
+a:active{
+    color: yellow;
+}
+input:checked{
+    width: 200px;
+    height: 200px;
+}
+
+li.acls01{
+    background-color: teal;
+}
