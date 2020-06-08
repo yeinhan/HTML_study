@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style type="text/css">
+        div{
+            width: 200px;
+            height: 200px;
+            border: 1px solid red;
+        }
+        #bgsize{
+            background: url("image/img01.png");
+            background-size: contain;
+        }
+        #multbg{
+            background-image: url("image/img01.png"), url("img/img02.png");
+        }
+        #bgclip{
+            border: 10px dotted black;
+            padding: 50px;
+            background-color: blue;
+            background-clip: padding-box;
+        }
+        #txtshadow{
+            text-shadow:1px 2px slateblue;
+        }
+    </style>    
+</head>
+<body>
+    <h1>background</h1>
+    <div id="bgsize">background size</div>
+
+    <h1>multi-background</h1>
+    <div id="multbg">multi-background</div>
+
+    <h1>background-clip</h1>
+    <div id="bgclip">backgound-clip</div>
+
+    <h1>text-shadow</h1>
+    <div id="txtshadow">text-shadow</div>
+</body>
+</html>
