@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>navMenu</title>
+    <style type="text/css">
+        .navi{
+            list-style-type: none;
+            height: 40px;
+            padding: 0;
+            margin: 0;
+        }
+        .navi li{
+            float: left;
+            position: relative;
+            padding: 0;
+            line-height: 40px;
+            background-color: lawngreen;
+        }
+        .navi li a{
+            display: block;
+            font-weight: 600;
+            font-size: 14px;
+            padding: 5px 25px;
+            color: indigo;
+            text-decoration: none;
+        }
+        .navi li a:hover{
+            color: maroon;
+        }
+        .navi li ul{
+            opacity: 0;
+            position: absolute;
+            left: 0;
+            width: 180px;
+            background-color: green;
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        .navi li:hover ul{
+            opacity: 1;
+        }
+        .navi li:hover li{
+            float: none;
+            position: static;
+            height: 0;
+            line-height: 0;
+            background: none;
+
+        }
+        .navi li:hover ul li{
+            height: 30px;
+            line-height: 30px;
+            padding: 5px 0;
+        }
+        .navi li ul li a{
+            color: gray;
+            background-color: hotpink;
+        }
+        .navi li ul li a:hover{
+            background: indigo;
+        }
+        .navi li ul{
+            transition: all 1s;
+        }
+        .navi li ul li{
+            transition: height 0.5s;;
+        }
+    </style>
+    
+</head>
+<body>
+    <h1>navMenu</h1>
+    <hr>
+    <ul class="navi">
+        <li><a href="">HOME</a></li>
+        <li>
+            <a href="">JAVA</a>
+            <ul>
+                <li><a href="">빈수</a></li>
+                <li><a href="">메소드</a></li>
+                <li><a href="">제어문</a></li>
+                <li><a href="">객체</a></li>
+            </ul>
+        </li>
+        <li>
+            <a href="">게시판</a>
+            <ul>
+                <li><a href="">Q&A</a></li>
+                <li><a href="">방명록</a></li>
+            </ul>
+        </li>
+        <li><a href="">고객센터</a></li>
+    </ul>
+
+</body>
+</html>
