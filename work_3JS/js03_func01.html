@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript">
+        function alertTest(){
+            alert("내용 출력");
+        }
+        //confTest(): 확인/취소 버튼 제공(true/false 반환)
+        function confTest(){
+            if(confirm("배경색을 분홍색으로 바꿀까요ㅛ?")){
+                document.body.style.backgroundColor="pink";
+            }else{
+                document.body.style.backgroundColor="white";
+                alert("기본색상 유지");
+            }
+        }
+        //prompt(): 텍스트 박스, 확인취소버튼
+        //반환값은 텍스트(취소:null);
+        function promptTest(){
+            var txt = prompt("좋아하는 과목 번호를 선택\n[1:java 2:db 3:ui]");
+            console.log(txt);
+
+            switch(txt){
+                case "1":
+                    alert("역시 자바");
+                    break;
+                case "2":
+                    alert("역시 DB");
+                    break;
+                case "3":
+                    alert("역시 UI")
+                    break;
+                case null:
+                    alert("다 싫은 사람");
+                    break;
+                default:
+                    alert("1,2,3 중 하나만 선택");
+            }
+
+        }
+    </script>
+</head>
+<body>
+    <h1>window 객체에서 제공하는 대화형 함수</h1>
+    <p>종류에는 <b>alert(), confirm(), prompt()</b>가 있다.</p>
+
+    <p>alert(): <button onclick="alertTest();">click</button></p>
+    <p>confirmt(): <button onclick="confTest();">click</button></p>
+    <p>prompt(): <button onclick="promptTest();">click</button></p>
+</body>
+</html>
