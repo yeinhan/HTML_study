@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript">
+        function strTest01(){
+            var str01 = "String";
+            var str02="Test";
+
+            var str03 = str01+str02;
+            alert("str01 + str02 = "+str03);
+
+            //concat(): 여러 문자열을 입력해서 하나로 합치는 함수
+            var newString = str01.concat("Test","Java","Script");
+            alert("concat() = "+newString);
+        }
+        function strTest02(){
+            var numVal = 12.5;
+            var bool = true;
+            var res="String"; +numVal+bool;
+            alert(res+" : "+typeof res);
+        }
+        function strTest03(){
+            var str = prompt("이름을 입력하세요");
+            var span = document.getElementById("res");
+
+            if(str == "lee"){
+                span.textContent = str+"님, 환영합니다.";
+            }else if(str.toLowerCase()="lee"){
+                span.textContent=str+"님, 환영합니다.";
+            }
+            else{
+                span.textContent="이름을 혹인해주세요";
+            }
+
+
+            //동등연산자 ==
+            //비교하는 자료형이여도 자동 형변환
+            var numVal = 10;
+            if(numVal == "10"){
+                alert("==연산자 사용: 숫자 10이 맞습니다.")
+
+            }else{
+                alert("==연산자 사용: 숫자10이 아닙니다.");
+            }
+
+            //만약, 자료형의 자동 형변환을 원하지 않으면
+            //===연산자 사용(엄격한 비교)
+            if(numVal === "10"){
+                alert("==연산자 사용: 숫자 10이 맞습니다.")
+
+            }else{
+                alert("==연산자 사용: 숫자10이 아닙니다.");
+            }
+        }
+        function strTest04(){
+
+        }
+        function strTest05(){
+            //subString
+
+            var strVal = "문자열 추출하기 관련함수:indexof, substring.";
+            var startIndex = strVal.indexOf(":");
+            var endIndex = strVal.lastIndexOf(".");
+            var substr = strVal.substring(startIndex, endIndex);
+            alert(substr);
+            var splitVal = substr.split(",");
+            alert(splitVal[1]);
+            alert(splitVal[0]);
+        }
+    </script>
+</head>
+<body>
+    <p>문자열 합치기
+        <button onclick="strTest01();">클릭시</button>
+    </p>
+    <p>다른 지표형 합치기
+
+        <button onclick="strTest02();">클릭!</button>
+    </p>
+        
+
+    <p>
+        문자열 비교하기
+        <button onclick="strTest03();">클릭</button>
+        <span id="res"></span></p>
+       
+
+    <p>문자열 검색하기
+        <button onclick="strTest04();">클릭시!!!</button>
+    </p>
+
+    <p>문자열 추출하기
+        <button onclick="strTest05();">click</button>
+    </p>
+</body> 
+</html>
